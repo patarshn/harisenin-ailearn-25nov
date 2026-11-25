@@ -1,0 +1,11 @@
+{
+  "name": "studycase-2-context-files",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

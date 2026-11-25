@@ -1,0 +1,16 @@
+{
+  "name": "studycase-4-ai-workflow",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "lint": "eslint .",
+    "test": "node --test",
+    "verify": "npm run lint && npm test"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.17.0"
+  }
+}

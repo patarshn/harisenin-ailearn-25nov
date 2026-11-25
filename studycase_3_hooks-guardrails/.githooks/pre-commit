@@ -1,0 +1,3 @@
+#!/bin/sh
+# Aktifkan dari root repo: git config core.hooksPath studycase_3_hooks-guardrails/.githooks
+node "$(dirname "$0")/../guardrails/scan-staged.js"

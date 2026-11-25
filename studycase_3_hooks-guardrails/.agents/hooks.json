@@ -1,0 +1,16 @@
+{
+  "studycase-3-guardrails": {
+    "PreToolUse": [
+      {
+        "matcher": "view_file|write_to_file|replace_file_content|multi_replace_file_content|run_command",
+        "hooks": [{ "type": "command", "command": "node guardrails/antigravity-hook.js pre", "timeout": 10 }]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "write_to_file|replace_file_content|multi_replace_file_content",
+        "hooks": [{ "type": "command", "command": "node guardrails/antigravity-hook.js post", "timeout": 10 }]
+      }
+    ]
+  }
+}

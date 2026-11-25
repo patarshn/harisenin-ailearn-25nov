@@ -1,0 +1,11 @@
+{
+  "name": "studycase-6-refactor-be",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

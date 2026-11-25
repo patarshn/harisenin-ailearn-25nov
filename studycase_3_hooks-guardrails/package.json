@@ -1,0 +1,11 @@
+{
+  "name": "studycase-3-hooks-guardrails",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

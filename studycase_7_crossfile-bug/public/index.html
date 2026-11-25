@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Shop — Checkout</title>
+    <style>
+      body { font-family: sans-serif; max-width: 420px; margin: 40px auto; padding: 0 16px; }
+      form { display: grid; gap: 8px; margin-bottom: 24px; }
+      input, select, button { padding: 8px; font-size: 14px; }
+      #message { padding: 8px; border-radius: 4px; }
+      .ok { background: #dcfce7; } .fail { background: #fee2e2; }
+    </style>
+  </head>
+  <body>
+    <h1>Mini Shop</h1>
+
+    <h2>1. Login</h2>
+    <form id="login-form">
+      <input name="username" placeholder="username" value="budi" />
+      <input name="password" type="password" placeholder="password" value="budi123" />
+      <button>Login</button>
+    </form>
+
+    <h2>2. Checkout (CheckoutForm)</h2>
+    <form id="checkout-form">
+      <select name="productId">
+        <option value="1">Kopi Arabika 250g — Rp85.000</option>
+        <option value="2">Teh Melati — Rp15.000</option>
+      </select>
+      <input name="quantity" type="number" min="1" value="2" />
+      <button>Checkout</button>
+    </form>
+
+    <p id="message"></p>
+
+    <h2>3. Pesanan Saya</h2>
+    <button id="load-orders">Muat pesanan</button>
+    <pre id="orders"></pre>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>
